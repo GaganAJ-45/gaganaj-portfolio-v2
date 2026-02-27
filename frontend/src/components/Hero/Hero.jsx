@@ -95,10 +95,10 @@ const Hero = () => {
             <div className="relative">
               <div className="glass-card p-3 rounded-3xl" data-testid="hero-photo">
                 <img
-                  src="/assets/gagan.jpeg"
-                  alt="Gagan A J - Data Analyst"
-                  className="rounded-2xl w-full max-w-sm h-auto object-cover"
-                />
+        src={`${import.meta.env.BASE_URL}assets/gagan.jpeg`}
+        alt="Gagan A J - Data Analyst"
+        className="rounded-2xl w-full max-w-sm h-auto object-cover"
+      />
               </div>
               {/* Soft decorative blobs */}
               <div className="absolute -top-6 -left-6 w-28 h-28 bg-brand-blue/10 rounded-full blur-2xl"></div>
