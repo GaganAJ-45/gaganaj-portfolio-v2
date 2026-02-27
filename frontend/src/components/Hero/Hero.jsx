@@ -75,7 +75,7 @@ const Hero = () => {
                 View My Work <FaArrowDown />
               </button>
               <a
-                href="/assets/Gagan_CV.pdf"
+                href={`${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`}
                 download
                 className="btn-outline"
                 data-testid="download-resume-button"
