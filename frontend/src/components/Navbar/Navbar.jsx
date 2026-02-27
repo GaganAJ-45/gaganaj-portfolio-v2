@@ -92,11 +92,12 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/assets/Gagan_CV.pdf"
-              download
-              className="ml-3 btn-primary text-sm py-2 px-5"
-              data-testid="nav-download-cv"
-            >
+  href={`${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="ml-3 btn-primary text-sm py-2 px-5"
+  data-testid="nav-download-cv"
+>
               <FaDownload /> CV
             </a>
           </div>
@@ -146,12 +147,13 @@ const Navbar = () => {
                 ))}
               </div>
               <a
-                href="/assets/Gagan_CV.pdf"
-                download
-                className="mt-4 btn-primary text-sm w-full justify-center"
-              >
-                <FaDownload /> Download CV
-              </a>
+  href={`${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 btn-primary text-sm w-full justify-center"
+>
+  <FaDownload /> Download CV
+</a>
             </motion.div>
           )}
         </AnimatePresence>
