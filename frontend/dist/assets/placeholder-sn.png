@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0d1117"/>
+  <text x="400" y="280" text-anchor="middle" font-family="Arial" font-size="32" fill="#00bfff" font-weight="bold">SN Dashboard</text>
+  <text x="400" y="320" text-anchor="middle" font-family="Arial" font-size="20" fill="#7c3aed">Sales & Profit Analysis</text>
+  <text x="400" y="360" text-anchor="middle" font-family="Arial" font-size="18" fill="#888">Coming Soon</text>
+</svg>

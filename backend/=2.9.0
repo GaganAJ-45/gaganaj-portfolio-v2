@@ -1,0 +1,5 @@
+Looking in indexes: https://pypi.org/simple, https://d33sy5i8bnduwe.cloudfront.net/simple/
+Requirement already satisfied: pydantic in /root/.venv/lib/python3.11/site-packages (2.5.3)
+Requirement already satisfied: annotated-types>=0.4.0 in /root/.venv/lib/python3.11/site-packages (from pydantic) (0.7.0)
+Requirement already satisfied: pydantic-core==2.14.6 in /root/.venv/lib/python3.11/site-packages (from pydantic) (2.14.6)
+Requirement already satisfied: typing-extensions>=4.6.1 in /root/.venv/lib/python3.11/site-packages (from pydantic) (4.15.0)

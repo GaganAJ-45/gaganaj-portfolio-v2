@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dev-portfolio-1293.preview.emergentagent.com/sitemap.xml
