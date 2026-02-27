@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/gaganaj-portfolio/',   // 👈 ADD THIS LINE
+  base: '/gaganaj-portfolio-v2/',   // 👈 ADD THIS LINE
   plugins: [react()],
   server: {
     host: true,
@@ -19,7 +19,8 @@ export default defineConfig({
       '.emergent.host'
     ]
   },
-  build: {
-    sourcemap: false,
-  },
+    build: {
+    outDir: "../docs",
+    emptyOutDir: true,
+  }
 });
