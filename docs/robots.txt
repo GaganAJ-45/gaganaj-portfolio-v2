@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gaganaj-45.github.io/gaganaj-portfolio-v2/sitemap.xml
+Sitemap: https://dev-portfolio-1293.preview.emergentagent.com/sitemap.xml
