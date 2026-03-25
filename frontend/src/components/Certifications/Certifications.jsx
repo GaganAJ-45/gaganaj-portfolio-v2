@@ -14,7 +14,7 @@ const Certifications = () => {
       date: 'September 21, 2025',
       duration: '8.5 hours',
       link: 'https://ude.my/UC-4e97af8d-5883-4678-ae90-a71b2c3b83a9',
-      pdfLink: '/assets/Power_BI_Certificate.pdf',
+      pdfLink: `${import.meta.env.BASE_URL}assets/Power_BI_Certificate.pdf`,
     },
     {
       title: 'SQL and PostgreSQL for Beginners: Become a SQL Expert',
@@ -23,7 +23,7 @@ const Certifications = () => {
       date: 'September 16, 2025',
       duration: '12.5 hours',
       link: 'https://ude.my/UC-5b89b888-3c52-4d18-a061-09d61a0003a5',
-      pdfLink: '/assets/SQL_Certificate.pdf',
+      pdfLink: `${import.meta.env.BASE_URL}assets/SQL_Certificate.pdf`,
     },
   ];
 
