@@ -1,9 +1,5 @@
 # Gagan A J - Data Analyst Portfolio
 
-A modern, responsive portfolio website showcasing my data analytics projects, skills, and experience.
-
-🔗 **Live Demo:** [View Portfolio](https://dev-portfolio-1293.preview.emergentagent.com)
-
 ## 🚀 Features
 
 - ✨ Modern, glassmorphism design with animated backgrounds
@@ -26,7 +22,6 @@ A modern, responsive portfolio website showcasing my data analytics projects, sk
 
 ### Backend
 - **FastAPI** - Python web framework
-- **MongoDB** - Database (optional)
 
 ## 📁 Project Structure
 
@@ -58,13 +53,6 @@ portfolio/
 │   ├── requirements.txt     # Python dependencies
 │   └── .env                 # Backend environment variables
 └── README.md                # This file
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 16+ and npm/yarn
-- Python 3.8+ (for backend, optional)
 
 ### Installation
 
