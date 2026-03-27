@@ -19,15 +19,6 @@ Before deploying, make sure you've updated:
 
 ## 🚀 Deployment Options
 
-### Option 1: Vercel (Recommended - Easiest)
-
-**Why Vercel?**
-- ✅ Free tier with custom domain
-- ✅ Automatic deployments from GitHub
-- ✅ Built-in CDN
-- ✅ Zero configuration for Vite
-- ✅ Serverless functions support
-
 **Steps:**
 
 1. **Push to GitHub** (see below)
