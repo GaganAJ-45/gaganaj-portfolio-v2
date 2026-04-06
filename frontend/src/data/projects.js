@@ -100,7 +100,7 @@ export const projects = [
       'Backend: Next.js Server Actions / API Routes',
       'Database: PostgreSQL (Neon / Aurora style architecture)',
       'ORM: Prisma',
-      'Authentication: NextAuth (if used)',
+      'Authentication: NextAuth',
       'Deployment: Vercel',
       'Version Control: Git + GitHub',
     ],
