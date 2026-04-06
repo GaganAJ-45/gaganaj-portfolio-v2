@@ -4,6 +4,34 @@ import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { projects, categories } from '../../data/projects';
 
+const ProjectActionButtons = ({ liveDemo, github, onClick }) => {
+  const containerClass = 'flex flex-col sm:flex-row gap-4 mt-4';
+  const buttonBaseClass = 'inline-flex items-center justify-center px-4 py-2.5 rounded-xl font-medium transition-all duration-300';
+
+  return (
+    <div className={containerClass}>
+      {liveDemo && (
+        <a
+          href={liveDemo}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={onClick}
+          className={`${buttonBaseClass} bg-green-600 text-white hover:bg-green-700`}
+        >Experience the App</a>
+      )}
+      <a
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={onClick}
+        className={`${buttonBaseClass} bg-gradient-to-r from-blue-600 to-teal-500 text-white shadow-md hover:from-blue-700 hover:to-teal-600`}
+      >
+        <FaGithub className="mr-2" /> View on GitHub
+      </a>
+    </div>
+  );
+};
+
 const Projects = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -94,16 +122,11 @@ const Projects = () => {
                         <span className="bg-slate-50 border border-slate-100 px-2.5 py-0.5 rounded-full text-xs text-slate-500">+{project.tech.length - 3}</span>
                       )}
                     </div>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <ProjectActionButtons
+                      liveDemo={project.liveDemo}
+                      github={project.github}
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-1.5 text-brand-blue hover:text-brand-teal text-sm font-medium transition-colors"
-                      data-testid={`project-github-${project.id}`}
-                    >
-                      <FaGithub /> View on GitHub
-                    </a>
+                    />
                   </div>
                 </motion.div>
               ))}
@@ -188,15 +211,10 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                <a
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary text-sm"
-                  data-testid="modal-github-link"
-                >
-                  <FaGithub /> View on GitHub
-                </a>
+                <ProjectActionButtons
+                  liveDemo={selectedProject.liveDemo}
+                  github={selectedProject.github}
+                />
               </div>
             </motion.div>
           </motion.div>

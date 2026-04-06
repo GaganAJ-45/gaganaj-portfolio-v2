@@ -8,7 +8,7 @@ const Skills = () => {
 
   const skillCategories = [
     { title: 'Visualization', icon: <FaChartBar />, skills: ['Power BI', 'Matplotlib'] },
-    { title: 'Databases', icon: <FaDatabase />, skills: ['PostgreSQL', 'MySQL'] },
+    { title: 'Databases', icon: <FaDatabase />, skills: ['PostgreSQL', 'MySQL', 'Neon Database'] },
     { title: 'Programming', icon: <FaPython />, skills: ['Python (Pandas, NumPy, Matplotlib)', 'SQL'] },
     { title: 'Data Tools', icon: <FaFileExcel />, skills: ['Excel', 'Power Query', 'Power Pivot', 'DAX'] },
     { title: 'Cloud (Basics)', icon: <FaCloud />, skills: ['AWS', 'Azure', 'GCP'] },

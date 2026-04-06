@@ -88,6 +88,32 @@ export const projects = [
     tech: ['Power BI Desktop'],
     github: 'https://github.com/GaganAJ-45/Health_Analyzer_PBI_Project',
   },
+  {
+    id: 7,
+    title: 'Aurora Roastery - Full Stack Coffee Storefront (Next.js + PostgreSQL + Neon)',
+    category: 'Next.js / Full Stack',
+    subtitle: 'A modern full-stack coffee storefront built using Next.js with database integration, authentication, and production deployment on Vercel.',
+    description: "Aurora Roastery is a full-stack e-commerce-style web application designed to simulate a modern coffee storefront. The application leverages server-side rendering and dynamic routing using Next.js, integrates a PostgreSQL database for persistent data storage, and is deployed on Vercel for scalable cloud hosting. The platform demonstrates real-world features such as product listing, authentication, and database interaction, making it production-ready. The hero section of Aurora Roastery features a cinematic, animated landing experience designed to enhance user engagement.",
+    features: [
+      'Live Demo: https://aurora-roastery.vercel.app/',
+      'Frontend: Next.js (App Router), React, Tailwind CSS',
+      'Backend: Next.js Server Actions / API Routes',
+      'Database: PostgreSQL (Neon / Aurora style architecture)',
+      'ORM: Prisma',
+      'Authentication: NextAuth (if used)',
+      'Deployment: Vercel',
+      'Version Control: Git + GitHub',
+    ],
+    images: [
+      `${import.meta.env.BASE_URL}assets/aurora1.png`,
+      `${import.meta.env.BASE_URL}assets/aurora2.png`,
+      `${import.meta.env.BASE_URL}assets/aurora3.png`,
+      `${import.meta.env.BASE_URL}assets/aurora4.png`,
+    ],
+    tech: ['Next.js', 'React', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'NextAuth', 'Vercel', 'GitHub'],
+    liveDemo: 'https://aurora-roastery.vercel.app/',
+    github: 'https://github.com/GaganAJ-45/aurora-roastery',
+  },
 ];
 
-export const categories = ['All', 'Power BI', 'SQL', 'Python + SQL', 'IoT / AI'];
+export const categories = ['All', 'Power BI', 'SQL', 'Python + SQL', 'IoT / AI', 'Next.js / Full Stack'];

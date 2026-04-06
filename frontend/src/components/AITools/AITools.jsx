@@ -12,7 +12,7 @@ const AITools = () => {
       icon: <FaBrain />,
       tools: [
         { name: 'ChatGPT', desc: 'Used for data analysis support, SQL optimization, documentation, and workflow automation ideas', status: 'Using' },
-        { name: 'Claude', desc: 'Assisted in long-form reasoning, report writing, and structured analysis', status: 'Using' },
+        { name: 'Claude (Anthropic)', desc: 'Advanced AI assistant by Anthropic used for reasoning, documentation, code understanding, and structured problem-solving', status: 'Using' },
         { name: 'HuskyVoice Agent', desc: 'Exploring voice-based AI agent experimentation and conversational workflow testing', status: 'Exploring' },
         { name: 'Retell AI', desc: 'Learning to build and test AI voice agents for automated interactions', status: 'Learning' },
       ],
@@ -23,6 +23,7 @@ const AITools = () => {
       tools: [
         { name: 'n8n', desc: 'Exploring workflow automation, API orchestration, and task automation using AI integrations', status: 'Exploring' },
         { name: 'Tabbly', desc: 'Learning to automate tabular data handling and productivity workflows', status: 'Learning' },
+        { name: 'Antigravity', desc: 'AI-assisted development environment for rapid prototyping, automation, and experimental workflows', status: 'Using' },
       ],
     },
     {
@@ -37,6 +38,7 @@ const AITools = () => {
       title: 'Developer Productivity',
       icon: <FaCode />,
       tools: [
+        { name: 'Codex', desc: 'AI-powered coding assistant for generating, debugging, and optimizing code across full-stack development workflows', status: 'Using' },
         { name: 'Cursor', desc: 'AI-powered code editor used for faster Python, SQL, and analytics development', status: 'Using' },
         { name: 'AI Code Assistants', desc: 'Assisted in debugging, refactoring, and ETL pipeline optimization', status: 'Using' },
       ],
