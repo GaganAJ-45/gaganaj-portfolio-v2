@@ -1,6 +1,17 @@
 # Gagan A J - Data Analyst Portfolio
 
+## 🚀 Features
 
+- ✨ Modern, glassmorphism design with animated backgrounds
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🎨 Smooth scroll animations and transitions
+- 📊 Real-time GitHub statistics integration
+- 💼 Project showcase with filtering
+- 📧 Contact form with Formspree integration
+- 🌐 SEO optimized with meta tags and structured data
+- ⚡ Fast loading with Vite build system
+
+## 🛠️ Tech Stack
 ### Frontend
 - **React** 18.3.1 - UI Framework
 - **Vite** 5.0.8 - Build tool
