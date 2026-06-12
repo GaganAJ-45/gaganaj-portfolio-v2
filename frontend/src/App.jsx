@@ -16,7 +16,7 @@ import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-brand-bg text-slate-800 font-inter">
+    <div className="relative min-h-screen overflow-x-hidden bg-brand-bg text-slate-800 font-inter">
       <Navbar />
       <main>
         <Hero />

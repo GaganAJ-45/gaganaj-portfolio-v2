@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import { FaDownload, FaArrowDown } from 'react-icons/fa';
+import { FaDownload, FaArrowDown, FaEye } from 'react-icons/fa';
 
 const Hero = () => {
+  const resumeUrl = `${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`;
+
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -75,7 +77,16 @@ const Hero = () => {
                 View My Work <FaArrowDown />
               </button>
               <a
-                href={`${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`}
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline"
+                data-testid="view-resume-button"
+              >
+                <FaEye /> View Resume
+              </a>
+              <a
+                href={resumeUrl}
                 download
                 className="btn-outline"
                 data-testid="download-resume-button"

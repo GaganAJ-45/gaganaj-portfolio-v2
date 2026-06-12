@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaGithub, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub, FaInfoCircle, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { projects, categories } from '../../data/projects';
 
-const ProjectActionButtons = ({ liveDemo, github, onClick }) => {
+const ProjectActionButtons = ({
+  liveDemo,
+  liveDemoLabel = 'Experience the App',
+  github,
+  githubLabel = 'View on GitHub',
+  onClick,
+  onDetailsClick,
+  showDetails = false,
+}) => {
   const containerClass = 'flex flex-col sm:flex-row gap-4 mt-4';
   const buttonBaseClass = 'inline-flex items-center justify-center px-4 py-2.5 rounded-xl font-medium transition-all duration-300';
 
@@ -17,17 +25,30 @@ const ProjectActionButtons = ({ liveDemo, github, onClick }) => {
           rel="noopener noreferrer"
           onClick={onClick}
           className={`${buttonBaseClass} bg-green-600 text-white hover:bg-green-700`}
-        >Experience the App</a>
+        >
+          <FaExternalLinkAlt className="mr-2" /> {liveDemoLabel}
+        </a>
       )}
-      <a
-        href={github}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={onClick}
-        className={`${buttonBaseClass} bg-gradient-to-r from-blue-600 to-teal-500 text-white shadow-md hover:from-blue-700 hover:to-teal-600`}
-      >
-        <FaGithub className="mr-2" /> View on GitHub
-      </a>
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={onClick}
+          className={`${buttonBaseClass} bg-gradient-to-r from-blue-600 to-teal-500 text-white shadow-md hover:from-blue-700 hover:to-teal-600`}
+        >
+          <FaGithub className="mr-2" /> {githubLabel}
+        </a>
+      )}
+      {showDetails && (
+        <button
+          type="button"
+          onClick={onDetailsClick}
+          className={`${buttonBaseClass} border border-blue-200 text-brand-blue hover:bg-blue-50`}
+        >
+          <FaInfoCircle className="mr-2" /> Project Details
+        </button>
+      )}
     </div>
   );
 };
@@ -104,6 +125,8 @@ const Projects = () => {
                     <img
                       src={project.images[0]}
                       alt={project.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect width="400" height="300" fill="%23f1f5f9"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="16" fill="%2394a3b8"%3EImage Coming Soon%3C/text%3E%3C/svg%3E';
@@ -124,8 +147,15 @@ const Projects = () => {
                     </div>
                     <ProjectActionButtons
                       liveDemo={project.liveDemo}
+                      liveDemoLabel={project.liveDemoLabel}
                       github={project.github}
+                      githubLabel={project.githubLabel}
                       onClick={(e) => e.stopPropagation()}
+                      showDetails={Boolean(project.github)}
+                      onDetailsClick={(e) => {
+                        e.stopPropagation();
+                        openModal(project);
+                      }}
                     />
                   </div>
                 </motion.div>
@@ -166,6 +196,8 @@ const Projects = () => {
                     <img
                       src={selectedProject.images[currentImageIndex]}
                       alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-auto"
                     />
                     {selectedProject.images.length > 1 && (
@@ -192,12 +224,25 @@ const Projects = () => {
                 </div>
                 {selectedProject.features && (
                   <div>
-                    <h3 className="text-base font-syne font-bold text-slate-800 mb-2">Core Features</h3>
+                    <h3 className="text-base font-syne font-bold text-slate-800 mb-2">Highlights</h3>
                     <ul className="space-y-1.5">
                       {selectedProject.features.map((f, i) => (
                         <li key={i} className="flex items-start gap-2 text-slate-600 text-sm">
                           <span className="text-brand-teal mt-0.5">&#8226;</span>
                           <span>{f}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {selectedProject.impact && (
+                  <div>
+                    <h3 className="text-base font-syne font-bold text-slate-800 mb-2">Impact</h3>
+                    <ul className="space-y-1.5">
+                      {selectedProject.impact.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-slate-600 text-sm">
+                          <span className="text-brand-teal mt-0.5">&#8226;</span>
+                          <span>{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -213,7 +258,9 @@ const Projects = () => {
                 </div>
                 <ProjectActionButtons
                   liveDemo={selectedProject.liveDemo}
+                  liveDemoLabel={selectedProject.liveDemoLabel}
                   github={selectedProject.github}
+                  githubLabel={selectedProject.githubLabel}
                 />
               </div>
             </motion.div>
