@@ -25,6 +25,15 @@ const Certifications = () => {
       link: 'https://ude.my/UC-5b89b888-3c52-4d18-a061-09d61a0003a5',
       pdfLink: `${import.meta.env.BASE_URL}assets/SQL_Certificate.pdf`,
     },
+    {
+      title: 'Data Analytics Internship',
+      platform: 'Nexus Core Innovations Pvt. Ltd., Bengaluru',
+      instructor: 'Nexus Core Innovations Pvt. Ltd., Bengaluru',
+      date: '11 May 2026',
+      duration: '2 Feb 2026 – 2 May 2026',
+      link: `${import.meta.env.BASE_URL}assets/certificates/nexus-core-data-analytics.pdf`,
+      pdfLink: `${import.meta.env.BASE_URL}assets/certificates/nexus-core-data-analytics.pdf`,
+    },
   ];
 
   return (
