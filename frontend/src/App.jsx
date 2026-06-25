@@ -14,6 +14,8 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
 
+const SHOW_BLOG_SECTION = false;
+
 function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-brand-bg text-slate-800 font-inter">
@@ -28,7 +30,7 @@ function App() {
         <Projects />
         <Timeline />
         <Certifications />
-        <Blog />
+        {SHOW_BLOG_SECTION && <Blog />}
         <Contact />
       </main>
       <Footer />
