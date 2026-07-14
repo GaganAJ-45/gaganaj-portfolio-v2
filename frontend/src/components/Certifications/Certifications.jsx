@@ -14,7 +14,6 @@ const Certifications = () => {
       date: 'September 21, 2025',
       duration: '8.5 hours',
       link: 'https://ude.my/UC-4e97af8d-5883-4678-ae90-a71b2c3b83a9',
-      pdfLink: `${import.meta.env.BASE_URL}assets/Power_BI_Certificate.pdf`,
     },
     {
       title: 'SQL and PostgreSQL for Beginners: Become a SQL Expert',
@@ -23,7 +22,6 @@ const Certifications = () => {
       date: 'September 16, 2025',
       duration: '12.5 hours',
       link: 'https://ude.my/UC-5b89b888-3c52-4d18-a061-09d61a0003a5',
-      pdfLink: `${import.meta.env.BASE_URL}assets/SQL_Certificate.pdf`,
     },
     {
       title: 'Data Analytics Internship',
@@ -32,7 +30,6 @@ const Certifications = () => {
       date: '11 May 2026',
       duration: '2 Feb 2026 – 2 May 2026',
       link: `${import.meta.env.BASE_URL}assets/certificates/nexus-core-data-analytics.pdf`,
-      pdfLink: `${import.meta.env.BASE_URL}assets/certificates/nexus-core-data-analytics.pdf`,
     },
   ];
 
@@ -84,17 +81,6 @@ const Certifications = () => {
                   >
                     <FaExternalLinkAlt /> View Certificate
                   </a>
-                  {cert.pdfLink && (
-                    <a
-                      href={cert.pdfLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-outline text-sm py-2 px-4"
-                      data-testid={`cert-pdf-${index}`}
-                    >
-                      PDF
-                    </a>
-                  )}
                 </div>
               </motion.div>
             ))}
