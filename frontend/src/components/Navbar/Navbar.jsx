@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaDownload, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaDownload, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +17,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Docs', href: '#documentation' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -24,7 +25,6 @@ const Navbar = () => {
     { icon: <FaGithub />, href: 'https://github.com/GaganAJ-45', label: 'GitHub' },
     { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/gagan-a-j', label: 'LinkedIn' },
     { icon: <FaInstagram />, href: 'https://www.instagram.com/gagan__aj', label: 'Instagram' },
-    { icon: <FaFacebook />, href: 'https://www.facebook.com/gagan.aj.900', label: 'Facebook' },
   ];
 
   const handleNavClick = (e, href) => {
@@ -147,13 +147,13 @@ const Navbar = () => {
                 ))}
               </div>
               <a
-  href={`${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-4 btn-primary text-sm w-full justify-center"
->
-  <FaDownload /> Download CV
-</a>
+                href={`${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 btn-primary text-sm w-full justify-center"
+              >
+                <FaDownload /> CV
+              </a>
             </motion.div>
           )}
         </AnimatePresence>

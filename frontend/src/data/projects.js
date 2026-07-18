@@ -153,7 +153,7 @@ export const projects = [
   {
     id: 9,
     title: 'Aurora Roastery - Full Stack Coffee Storefront (Next.js + PostgreSQL + Neon)',
-    category: 'Next.js / Full Stack',
+    category: 'Client Website',
     subtitle: 'A modern full-stack coffee storefront built using Next.js with database integration, authentication, and production deployment on Vercel.',
     description: "Aurora Roastery is a full-stack e-commerce-style web application designed to simulate a modern coffee storefront. The application leverages server-side rendering and dynamic routing using Next.js, integrates a PostgreSQL database for persistent data storage, and is deployed on Vercel for scalable cloud hosting. The platform demonstrates real-world features such as product listing, authentication, and database interaction, making it production-ready. The hero section of Aurora Roastery features a cinematic, animated landing experience designed to enhance user engagement.",
     features: [
@@ -178,4 +178,4 @@ export const projects = [
   },
 ];
 
-export const categories = ['All', 'Client Website', 'Python', 'Power BI', 'SQL', 'Python + SQL', 'IoT / AI', 'Next.js / Full Stack'];
+export const categories = ['All', 'Client Website', 'Python', 'Power BI', 'SQL', 'Python + SQL', 'IoT / AI'];

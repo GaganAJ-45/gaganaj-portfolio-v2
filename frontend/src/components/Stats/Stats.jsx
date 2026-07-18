@@ -29,9 +29,9 @@ const Stats = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   const stats = [
-    { icon: <FaProjectDiagram />, value: 6, label: 'Projects Completed', suffix: '+' },
+    { icon: <FaProjectDiagram />, value: 11, label: 'Projects Completed', suffix: '+' },
     { icon: <FaCertificate />, value: 4, label: 'Certifications Earned', suffix: '+' },
-    { icon: <FaTools />, value: 5, label: 'Tools & Technologies', suffix: '+' },
+    { icon: <FaTools />, value: 8, label: 'Tools & Technologies', suffix: '+' },
     { icon: <FaTrophy />, value: 8.0, label: 'CGPA', suffix: '', decimal: true },
   ];
 

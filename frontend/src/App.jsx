@@ -9,6 +9,7 @@ import GitHubStats from './components/GitHubStats/GitHubStats';
 import Projects from './components/Projects/Projects';
 import Timeline from './components/Timeline/Timeline';
 import Certifications from './components/Certifications/Certifications';
+import Documentation from './components/Documentation/Documentation';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -30,6 +31,7 @@ function App() {
         <Projects />
         <Timeline />
         <Certifications />
+        <Documentation />
         {SHOW_BLOG_SECTION && <Blog />}
         <Contact />
       </main>

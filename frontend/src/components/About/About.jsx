@@ -7,7 +7,7 @@ const About = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   const highlights = [
-    { icon: <FaCode />, title: 'Data Engineering', desc: 'ETL Pipelines & Data Processing' },
+    { icon: <FaCode />, title: 'Software Development', desc: 'HTML, CSS, JavaScript & Web Projects' },
     { icon: <FaChartBar />, title: 'Visualization', desc: 'Power BI & Interactive Dashboards' },
     { icon: <FaLightbulb />, title: 'Analysis', desc: 'KPI-Driven Insights & Analytics' },
     { icon: <FaRocket />, title: 'AI Automation', desc: 'Exploring Modern AI Tools' },
@@ -30,7 +30,7 @@ const About = () => {
         >
           <div className="text-center mb-14">
             <p className="text-sm text-slate-500 uppercase tracking-wider mb-2">Who I Am</p>
-            <motion.h2 
+            <motion.h2
               className="text-3xl md:text-4xl font-syne font-bold text-slate-900 mb-3"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
@@ -38,7 +38,7 @@ const About = () => {
             >
               About Me
             </motion.h2>
-            <motion.div 
+            <motion.div
               className="section-line mx-auto"
               initial={{ width: 0 }}
               animate={inView ? { width: 60 } : {}}
@@ -52,42 +52,42 @@ const About = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="glass-card p-8 rounded-3xl mb-10 space-y-5"
+              className="glass-card p-8 rounded-3xl mb-10 space-y-5 text-center"
             >
               <p className="text-lg text-slate-700 leading-relaxed">
-                I'm <span className="text-accent font-bold text-xl">Gagan A J</span>, a Data Analyst aspirant with a strong foundation in Python, SQL, and Power BI, and a background in Electronics & Communication Engineering.
+                I'm <span className="text-accent font-bold text-xl">Gagan A J</span>, a Software Developer and Data Analyst with a strong foundation in Python, SQL, HTML, CSS, JavaScript, and Power BI, and a background in Electronics & Communication Engineering.
               </p>
-              
+
               {/* Inline Text Badges */}
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-500 py-2">
+              <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-sm text-slate-500 py-2">
                 <span className="flex items-center gap-1.5">
                   <svg className="w-4 h-4 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  6+ Analytics Projects
+                  11+ Projects
                 </span>
                 <span className="flex items-center gap-1.5">
                   <svg className="w-4 h-4 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Power BI | SQL | Python
+                  Python | SQL | JavaScript | Power BI
                 </span>
                 <span className="flex items-center gap-1.5">
                   <svg className="w-4 h-4 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  ECE → Data Analytics
+                  ECE → Software & Data
                 </span>
               </div>
 
               <p className="text-base text-slate-600 leading-relaxed">
-                I specialize in transforming raw data into meaningful insights through <span className="text-brand-teal font-semibold">ETL pipelines</span>, <span className="text-brand-teal font-semibold">interactive dashboards</span>, and <span className="text-brand-teal font-semibold">KPI-driven analysis</span>.
+                I specialize in building software solutions and transforming raw data into meaningful insights — from full-stack web applications to ETL pipelines, interactive dashboards, and KPI-driven analysis.
               </p>
               <p className="text-base text-slate-600 leading-relaxed">
-                Alongside data analytics, I've started exploring <span className="text-brand-blue font-semibold">AI automation</span> and modern AI tools to enhance workflows and improve productivity.
+                Alongside development and analytics, I've been exploring cloud deployment on AWS and modern AI tools to build faster, automate workflows, and improve productivity.
               </p>
               <p className="text-base text-slate-600 leading-relaxed">
-                I've built real-world analytics projects in sales, healthcare, and education, delivering insights through Power BI dashboards and SQL-driven analysis.
+                I've built real-world projects spanning client websites, automation tools, and analytics dashboards — delivering solutions in sales, healthcare, and education through Python, SQL, Power BI, and cloud deployment.
               </p>
             </motion.div>
 

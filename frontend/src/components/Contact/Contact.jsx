@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaInstagram, FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -47,7 +47,6 @@ const Contact = () => {
     { icon: <FaGithub />, href: 'https://github.com/GaganAJ-45', label: 'GitHub' },
     { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/gagan-a-j', label: 'LinkedIn' },
     { icon: <FaInstagram />, href: 'https://www.instagram.com/gagan__aj', label: 'Instagram' },
-    { icon: <FaFacebook />, href: 'https://www.facebook.com/gagan.aj.900', label: 'Facebook' },
   ];
 
   const inputClass = "w-full bg-white/60 backdrop-blur border border-slate-200 p-3 rounded-xl text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue transition-all text-sm";
@@ -122,7 +121,7 @@ const Contact = () => {
 
               <div className="glass-card p-6 rounded-2xl">
                 <h4 className="text-base font-syne font-semibold text-slate-800 mb-2">Got a project or opportunity?</h4>
-                <p className="text-slate-600 text-sm leading-relaxed">Open to internships, freelance, and full-time roles in Data Analytics, Business Intelligence, and AI-assisted analytics.</p>
+                <p className="text-slate-600 text-sm leading-relaxed">Open to internships, freelance, and full-time roles in Software Development, Cloud, Application Support, and Data Analytics.</p>
               </div>
             </motion.div>
 

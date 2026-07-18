@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import { FaDownload, FaArrowDown, FaEye } from 'react-icons/fa';
+import { FaDownload, FaArrowDown } from 'react-icons/fa';
 
 const Hero = () => {
   const resumeUrl = `${import.meta.env.BASE_URL}assets/Gagan_CV.pdf`;
@@ -41,10 +41,10 @@ const Hero = () => {
               <Typewriter
                 options={{
                   strings: [
+                    'Software Developer',
                     'Data Analyst',
-                    'BI Developer',
-                    'AI Assisted Analytics',
-                    'Python & SQL Developer',
+                    'Cloud & Application Support',
+                    'Python And SQL Developer',
                   ],
                   autoStart: true,
                   loop: true,
@@ -60,7 +60,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              Building data-driven solutions with Python, SQL, and Power BI. Specializing in ETL pipelines and interactive dashboards that drive business decisions.
+              Building software, cloud deployments, and data-driven solutions with Python, JavaScript, AWS, and SQL. From full-stack web apps to ETL pipelines and BI dashboards.
             </motion.p>
 
             <motion.div
@@ -76,15 +76,6 @@ const Hero = () => {
               >
                 View My Work <FaArrowDown />
               </button>
-              <a
-                href={resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-                data-testid="view-resume-button"
-              >
-                <FaEye /> View Resume
-              </a>
               <a
                 href={resumeUrl}
                 download

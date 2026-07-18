@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,7 +8,6 @@ const Footer = () => {
     { icon: <FaGithub />, href: 'https://github.com/GaganAJ-45', label: 'GitHub' },
     { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/gagan-a-j', label: 'LinkedIn' },
     { icon: <FaInstagram />, href: 'https://www.instagram.com/gagan__aj', label: 'Instagram' },
-    { icon: <FaFacebook />, href: 'https://www.facebook.com/gagan.aj.900', label: 'Facebook' },
   ];
 
   return (
@@ -17,7 +16,7 @@ const Footer = () => {
         <div className="text-center space-y-5">
           <div>
             <h3 className="text-2xl font-syne font-bold text-accent mb-1">Gagan A J</h3>
-            <p className="text-slate-500 text-sm">Data Analyst | Business Intelligence | AI Tools Explorer</p>
+            <p className="text-slate-500 text-sm">Software Developer | Data & Cloud | AI Tools Explorer</p>
           </div>
 
           <div className="flex justify-center gap-5">
